@@ -7,6 +7,7 @@ repository = "https://github.com/citronneur/rdp-rs"
 readme = "README.md"
 keywords = ["rdp", "security", "network", "windows"]
 categories = ["network"]
+edition="2018"
 license = "MIT"
 documentation = "https://docs.rs/rdp-rs"
 
@@ -31,11 +32,12 @@ byteorder = "^1.3"
 bufstream = "0.1"
 indexmap = "^1.3"
 yasna = { version = "^0.3" }
+cipher = "^0.2"
 md4 = "^0.8"
 hmac = "^0.7"
 md-5 = "^0.8"
 rand = "^0.7"
-rust-crypto = "^0.2"
+rust-crypto = "^0.2" # Required for RC4 NTLM Hash support
 num-bigint = "^0.2"
 x509-parser = "0.6.5"
 num_enum = "0.4.3"
